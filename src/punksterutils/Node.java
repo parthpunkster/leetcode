@@ -1,5 +1,7 @@
 package punksterutils;
 
+import java.util.HashSet;
+
 public class Node {
     public int value;
     public Node next;
@@ -25,5 +27,17 @@ public class Node {
             System.out.println(first.value);
             first = first.next;
         }
+    }
+
+    public static boolean hasCycle(Node head){
+        HashSet<Node> seen = new HashSet<Node>();
+        while (head != null){
+            if (seen.contains(head)){
+                return true;
+            }
+            seen.add(head);
+            head = head.next;
+        }
+        return false;
     }
 }

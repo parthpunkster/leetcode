@@ -1,4 +1,4 @@
-package q119_PascalsTriangleII;
+package q119_pascalstriangleII;
 
 import java.util.LinkedList;
 import java.util.List;
