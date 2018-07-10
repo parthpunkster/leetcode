@@ -33,7 +33,7 @@ public class Main {
             return null;
         }
         Node shorter = r1.size < r2.size ? headA : headB;
-        Node longer = r1.size > r2.size ? headA : headB;
+        Node longer = r1.size >= r2.size ? headA : headB;
         longer = getKthNode(longer,Math.abs(r1.size - r2.size));
 
         while (shorter != longer){
@@ -58,7 +58,7 @@ public class Main {
         d.next = e;
         f.next = g;
         g.next = h;
-        h.next = c;
+        h.next = d;
         System.out.println(getIntersectionNode(a,f).value);
     }
 }
