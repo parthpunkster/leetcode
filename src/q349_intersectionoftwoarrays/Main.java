@@ -1,6 +1,5 @@
 package q349_intersectionoftwoarrays;
 
-import com.sun.deploy.util.ArrayUtil;
 import punksterutils.ArrayUtilities;
 
 import java.util.ArrayList;
