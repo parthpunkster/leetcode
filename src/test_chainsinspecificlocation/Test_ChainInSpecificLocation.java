@@ -31,8 +31,8 @@ public class Test_ChainInSpecificLocation {
         Collections.sort(result, new Comparator<Chain>() {
             @Override
             public int compare(Chain chain, Chain t1) {
-                if (chain.count > t1.count) return 1;
-                else if (chain.count < t1.count) return -1;
+                if (chain.count > t1.count) return -1;
+                else if (chain.count < t1.count) return 1;
                 return chain.name.compareTo(t1.name);
             }
         });
