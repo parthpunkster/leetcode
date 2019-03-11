@@ -41,13 +41,13 @@ public class Test_ChainInSpecificLocation {
 
     public static void main(String[] args){
         List<Business> businesses = new ArrayList<>();
-        businesses.add(new Business("Starbucks","Austin","102"));
-        businesses.add(new Business("Walmart","sanjose","101"));
-        businesses.add(new Business("Walmart","sanjose","101"));
-        businesses.add(new Business("Walmart","sanjose","102"));
-        businesses.add(new Business("Starbucks","sanjose","104"));
-        businesses.add(new Business("Alpha","sanjose","101"));
-        businesses.add(new Business("Alpha","sanjose","102"));
+        Collections.addAll(businesses,new Business("Starbucks","Austin","102"),
+        new Business("Walmart","sanjose","101"),
+        new Business("Walmart","sanjose","101"),
+        new Business("Walmart","sanjose","102"),
+        new Business("Starbucks","sanjose","104"),
+        new Business("Alpha","sanjose","101"),
+        new Business("Alpha","sanjose","102"));
 
         System.out.println(helper(businesses,"sanjose"));
     }
